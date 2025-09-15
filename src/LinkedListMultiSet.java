@@ -26,6 +26,7 @@ public class LinkedListMultiSet extends MultiSet {
 
     public void remove(int item) {
 
+
     }
 
     public boolean contains(int item) {
@@ -33,6 +34,9 @@ public class LinkedListMultiSet extends MultiSet {
     }
 
     public boolean isEmpty() {
+        if(front == null) {
+            return true;
+        }
         return false;
     }
 
