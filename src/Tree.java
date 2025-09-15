@@ -1,6 +1,16 @@
 public class Tree {
-    // We recommend attempting this class last, as it hasn't been scaffolded for your team.
-    // Even if your team doesn't have time to implement this class, it is a useful exercise
-    // to think about how you might split up the work to get the Tree and TreeMultiSet
-    // implemented.
+   private static final class Node {
+       int key;
+       int value;
+       private Node left;
+       private Node right;
+
+       public Node(int key, int value) {
+           this.key = key;
+           this.value = value;
+       }
+   }
+
+   private Node root;
+   private int size;
 }
